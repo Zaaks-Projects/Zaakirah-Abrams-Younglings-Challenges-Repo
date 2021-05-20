@@ -1,0 +1,15 @@
+a{
+    margin: 0px 20px 20px 0px;
+    text-decoration: none;
+    padding: 25px;
+    font-weight: bold;
+    color: #132149;
+    background-color: transparent;
+    font-size: 13px;
+    
+    
+}
+.nav-link :hover{
+    background-color: #132149;
+    color: white;    
+}
