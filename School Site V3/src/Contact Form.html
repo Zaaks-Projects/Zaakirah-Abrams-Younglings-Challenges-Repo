@@ -16,14 +16,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- link for the bootstrap used to make labels float on the form -->
-    <link rel="stylesheet" href="https://stackpath.bootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
     <!-- This is the php link for the recaptcha -->
     <link rel="stylesheet" href="action_page.php">
     <link rel="stylesheet" href="Contact.css">
 
-    <!-- This is the script for the google captcha -->
     
     <title>ROCKLANDS SECONDARY HIGH</title>
 </head>
@@ -72,7 +68,7 @@
                 <div class="form-group">
                     <label for="Name"><strong>Name</strong></label>
                     <br>
-                    <input type="text" class="form-control fullname" id="Name" placeholder="Enter Full Name" required name="data[Name]" onchange="updateMessage(name,value)">
+                    <input type="text" class="form-control fullname" id="Name" placeholder="Enter Name" required name="data[Name]" onchange="updateMessage(name,value)">
                 </div>
                 <div class="form-group">
                     <label for="Surname"><strong>Surname</strong></label>
@@ -89,6 +85,17 @@
                     <br>
                     <textarea class="form-control message" id="Message" placeholder="Enter Message" cols="30" rows="10" required name="data[Message]" onchange="updateMessage(name,value)"></textarea>
                     <br>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="CheckboxNews" name="newsbox">
+                            <label class="custom-control-label" for="CheckboxNews">I would like to receive updates from the school news letters</label>
+                        </div>
+                    <br>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="RadioT&C" name="radioT&C" value="customEx" required>
+                            <label class="custom-control-label" for="RadioT&C">I agree to all Terms and conditions</label>
+                        </div>
+                    <br>
+                    <!-- This link is the link needed for my google captcha to work -->
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <div class="g-recaptcha" data-sitekey="6LclHPgaAAAAAAaxkyt0MFmB0GGPRJfdF4HTJSpa"></div>
                 </div>

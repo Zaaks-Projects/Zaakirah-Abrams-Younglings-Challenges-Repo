@@ -53,3 +53,20 @@ footer{
     font-weight: bold;
 }
 
+@media (max-width: 768px){
+
+    .footer{
+
+    }
+}
+
+@media (max-width: 480px){
+    .footer{
+        font-size: 1rem;
+    }
+    
+
+}
+
+
+

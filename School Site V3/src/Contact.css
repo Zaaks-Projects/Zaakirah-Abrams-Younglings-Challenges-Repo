@@ -44,3 +44,14 @@ h2{
 textarea{
     resize: none;
 }
+@media (max-width: 768px){
+    .footer{
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 480px){
+    .footer{
+        font-size: 15px;
+    }
+}
