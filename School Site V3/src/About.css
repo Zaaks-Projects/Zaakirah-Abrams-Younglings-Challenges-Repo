@@ -1,5 +1,6 @@
 body, html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #eb9b2c; */
 }
 
 a{
@@ -12,6 +13,10 @@ a{
     font-size: 13px;
     font-weight: bolder;
     
+}
+
+.nav-link a{
+    color: #132149 !important;
 }
 .nav-link :hover{
     background-color: #132149;
@@ -34,6 +39,11 @@ a{
     text-transform: capitalize;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+}
+
+.myLine{
+    border-width: .2rem;
+    /* border-color: #132149; */
 }
 
 footer{

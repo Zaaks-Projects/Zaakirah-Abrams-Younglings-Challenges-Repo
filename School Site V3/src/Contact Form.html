@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="Contact.css">
 
     <!-- This is the script for the google captcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <title>ROCKLANDS SECONDARY HIGH</title>
 </head>
 <nav class="nav navbar navbar-expand-md navbar-light bg-transparent">
@@ -68,7 +68,7 @@
     <section class="get_in_touch">
         <div class="row" id="ContainerForm">
         <div class="container">
-            <form id="contactForm" action="https://sheetdb.io/api/v1/qrfhx1rqr8fz0" method="POST">
+            <form id="contactForm" action="https://sheetdb.io/api/v1/qrfhx1rqr8fz0" method="POST" href="action_page.php">
                 <div class="form-group">
                     <label for="Name"><strong>Name</strong></label>
                     <br>
@@ -89,8 +89,10 @@
                     <br>
                     <textarea class="form-control message" id="Message" placeholder="Enter Message" cols="30" rows="10" required name="data[Message]" onchange="updateMessage(name,value)"></textarea>
                     <br>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <div class="g-recaptcha" data-sitekey="6LclHPgaAAAAAAaxkyt0MFmB0GGPRJfdF4HTJSpa"></div>
                 </div>
+                <button type="reset" class="btn btn-info"><strong>Clear</strong></button>
                 <button type="submit" class="btn btn-info" onclick="sendEmail()"><strong>Submit</strong></button>
             </form>
         </div>
@@ -110,8 +112,7 @@
           }).then(
               response => response.json()
           ).then((html) => {
-            // you can put any JS code here
-            alert('success')
+            alert('Your mail has been recorded')
           });
         });
       </script>
@@ -140,7 +141,7 @@
         Subject : "Schools Website Contact Submissions",
         Body : `Name: ${a["data[Name]"]} <br> ${a["data[Message]"]}`
     }).then(
-    message => alert(message)
+    message => alert("We recieved your submission.Please hold while we get back to you")
     );
         }
  
@@ -153,26 +154,26 @@
     <div class="container-fluid padding">
         <div class="row">
             <div class="col-md-4">
-                <h6>NEED TO CONTACT US</h6>
-                <h6>GET UPDATES THROUGH OUR SOCIAL MEDIA</h6>
-                <hr class="light">
+                <h6 style="text-shadow: 1px 1px 10px #000 ;">NEED TO CONTACT US</h6>
+                <h6 style="text-shadow: 1px 1px 10px #000 ;">GET UPDATES THROUGH OUR SOCIAL MEDIA</h6>
+                
                 <br>
-                <p>Telephone Number:         021 392 7139</p>
-                <p>Telephone Number:         021 391 0476</p>
-                <p>Email:rocklands.sec@wcqschool.gov.co.za</p>
-                <Address>Eisleben Dr & The Cedars Ave, Rocklands, Cape Town, 7798</Address>
+                <p style="text-shadow: 1px 1px 10px #000 ;">Telephone Number:         021 392 7139</p>
+                <p style="text-shadow: 1px 1px 10px #000 ;">Telephone Number:         021 391 0476</p>
+                <p style="text-shadow: 1px 1px 10px #000 ;">Email:rocklands.sec@wcqschool.gov.co.za</p>
+                <Address style="text-shadow: 1px 1px 10px #000 ;">Eisleben Dr & The Cedars Ave, Rocklands, Cape Town, 7798</Address>
             </div>
             <div class="col-md-4">
                  
              </div>
             <div class="col-md-4">
                 
-                 <h6 style="text-decoration: underline;">SCHOOL TIME</h6>
-             <hr>
+                 <h6 style="text-shadow: 1px 1px 10px #000 ;">SCHOOL HOURS</h6>
+           
              <br>
              <br>
-             <p>Monday - Thursday: 8am - 4pm</p>
-             <p>Fridays: 8am - 12:30pm</p>
+             <p style="text-shadow: 1px 1px 10px #000 ;">Monday - Thursday: 8am - 4pm</p>
+             <p style="text-shadow: 1px 1px 10px #000 ;">Fridays: 8am - 12:30pm</p>
              </div>
              
          </div>
