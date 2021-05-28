@@ -1,0 +1,46 @@
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+a{
+    margin: 0px 20px 20px 0px;
+    text-decoration: none;
+    padding: 25px;
+    font-weight: bold;
+    color: #132149;
+    background-color: transparent;
+    font-size: 13px;
+    
+    
+}
+
+.nav-link :hover{
+    background-color: #132149;
+    color: white;    
+}
+.nav-link a :hover{
+    background-color: #132149;
+    color: white; 
+}
+
+h2{
+    color: #eb9b2c;
+    font-weight: bolder;
+}
+
+ .Formtext{
+     font-weight: bold;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #132149;
+ }
+
+ footer{
+    background-color: #132149;
+    color: #eb9b2c;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+textarea{
+    resize: none;
+}

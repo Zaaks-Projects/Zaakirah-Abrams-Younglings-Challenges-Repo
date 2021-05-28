@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        <!--Links to all the things needed to use bootstraps-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ALL LINKS THAT I NEED FOR THE BOOTSTRAP TO WORK FOR MY SITE -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajx.googleapis.com/ajx/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Stylesheet and Javascript Links -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="navigationscript.js">
+    
+    <title>Rocklands Secondary High</title>
+
+</head>
+<header>    <!--Navigation bar, SlideShow and the Second heading that includes the motto of the school USED BOOTSTRAP IN ORDER TO COMPLETE THIS SECTION-->
+    <nav class="nav navbar navbar-expand-md navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a href="Index.html" class="navbar-brand"><img src="badge.svg" alt="school badge"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse active" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto active">
+                    <li class="nav-item">
+                        <a href="Index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/pg/RocklandsHigh/events/?ref=page_internal" class="nav-link">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact Form.html" class="nav-link">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slidesh0w for the school made in bootstrap using carousel -->
+    <div id="Slides" class="carousel slide">
+        <ul class="carousel-indicators">
+          <li class="item1 active"></li>
+          <li class="item2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/src/Slideshow1.jpg" alt="Slide1" width="1100" height="500">
+            <div class="carousel-caption">
+                <h1>WE AIM FOR THE 100%</h1>
+                <h3>VOLHARD EN OORWIN</h3>
+               
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/src/Slideshow 2.jpg" alt="Slide2" width="1100" height="500">
+            <div class="carousel-caption">
+                <h1>WE AIM FOR THE 100%</h1>
+                <h3>VOLHARD EN OORWIN</h3>
+                  
+            </div>
+          </div>
+          
+        <a class="carousel-control-prev" href="#Slides">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#Slides">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      </div>
+       
+    <!-- Scripts used for the interactions of the slideshow carousel which helps move from one 
+    picture to another -->
+      <script>
+      $(document).ready(function(){
+        // Activate The Carousel As A Whole Slideshow Display On The Website
+        $("#Slides").carousel();
+          
+        // Enable Carousel Indicators (so the the buttons may move from one image to another image)
+        $(".item1").click(function(){
+          $("#Slides").carousel(0);
+        });
+        $(".item2").click(function(){
+          $("#Slides").carousel(1);
+        });
+        $(".item3").click(function(){
+          $("#Slides").carousel(2);
+        });
+          
+        // Enable Carousel Controls  (so the the buttons may move from one image to another image but as side buttons)
+        $(".carousel-control-prev").click(function(){
+          $("#Slides").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+          $("#Slides").carousel("next");
+        });
+      });
+      </script>
+    
+    <br>
+
+</header>
+<body>
+    <br>
+    <br>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4 text-b hero">SCHOOL CREDITS</h1>
+            </div>
+            <hr class="light">
+
+        </div>
+        <br>
+    </div>
+    
+    <!-- individual cards for the information, also the links that takes the user to different pages showing information on the subheadings-->
+   <div class="container-fluid padding">
+       <div class="row padding flip-card">
+           <div class="col-md-4 flip-card-inner">
+               <div class="card flip-card-front">
+                   <img src="/images/school_exams.jpg" alt="Image of the leaners at a competition" class="card-img-top">
+                   <div class="card-body">
+                       <br>
+                       <h4 class="card-title">Academic Achievements</h4>
+                       <a href="https://www.facebook.com/pg/RocklandsHigh/photos/" class="btn btn-primary"><button type="button" class="btn btn-primary"><strong>View More</strong></button></a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-4 fadeIn">
+            <div class="card">
+                <img src="/images/awards.jpg" alt="Image of the leaners at a competition" class="card-img-top">
+                <div class="card-body">
+                    <br>
+                    <h4 class="card-title">School Achievements</h4>
+                    <a href="https://www.facebook.com/pg/RocklandsHigh/photos/" class="btn btn-primary"><button type="button" class="btn btn-primary"><strong>View More</strong></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/School-111 (2).jpg" alt="Image of the leaners at a competition" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Sports</h4>
+                    <a href="https://www.facebook.com/pg/RocklandsHigh/photos/" class="btn btn-primary"><button type="button" class="btn btn-primary"><strong>View More</strong></button></a>
+                </div>
+            </div>
+        </div>
+       </div>
+   </div>
+<br>
+<br>
+<hr class="col-6 myLine">
+   <div class="container-fluid padding myStyle">
+       <div class="row padding">
+           <div class="col-lg-6">
+              
+               <h2 class="text-center">WE AIM HIGH</h2>
+               <p class=" text-center text-b HeroP">We aim high. Not to make the learners cry or feel the need for disappointments. We aim high so that they can achieve target goals. So that they can achieve a position in life that makes them succeed. We want our learners to feel that they can do it. Because they made the choice they can and they will. We create LEADERS and they receive the MOTIVATION.</p>
+           </div>
+           <div class="col-lg-6">
+                <img src="Covers.png" alt="" class="img-fluid">
+           </div>
+       </div>
+   </div>
+<br>
+<hr class="col-6 myLine">
+
+<!-- icons people can click of when they would like to go to facebook or emails// bascically this is another form of the catch us on-->
+   <div class="container-fluid padding myIcons" id="SocialMedia"> 
+       <div class="row text-center padding">
+            <div class="col-12">
+                <h2>CATCH US ON</h2>
+            </div>
+            <br>
+            <div class="col-12 social padding ">
+                <a href="https://www.facebook.com/RocklandsHigh/"><i class="fa fa-facebook"></i></a>
+                <a href="#get-in-touch"><i class="fa fa-phone"></i></a>
+                <a href="#get-in-touch"><i class="fa fa-envelope""></i></a>
+            </div>
+       </div>
+   </div>
+<br>
+
+   <!-- Footer sectionto display any contact details from the school  -->
+   <footer id="get-in-touch">
+       <div class="container-fluid padding">
+           <div class="row">
+               <div class="col-md-4">
+                   <h6>NEED TO CONTACT US</h6>
+                   <h6>GET UPDATES THROUGH OUR SOCIAL MEDIA</h6>
+                   <hr class="light">
+                   <br>
+                   <p>Telephone Number:         021 392 7139</p>
+                   <p>Telephone Number:         021 391 0476</p>
+                   <p>Email:rocklands.sec@wcqschool.gov.co.za</p>
+                   <Address>Eisleben Dr & The Cedars Ave, Rocklands, Cape Town, 7798</Address>
+               </div>
+               <div class="col-md-4">
+                    
+                </div>
+               <div class="col-md-4">
+                   
+                    <h6 style="text-decoration: underline;">SCHOOL TIME</h6>
+                <hr>
+                <br>
+                <br>
+                <p>Monday - Thursday: 8am - 4pm</p>
+                <p>Fridays: 8am - 12:30pm</p>
+                </div>
+                
+            </div>
+           </div>
+       </div>
+   </footer>
+
+</body>
+
+</html>
